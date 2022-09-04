@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.TestController">
+     <children>
+      <ScrollPane layoutX="14.0" layoutY="219.0" prefHeight="364.0" prefWidth="708.0">
+         <content>
+            <VBox fx:id="ListContainer" prefWidth="690.0" />
+         </content>
+      </ScrollPane>
+      <AnchorPane fx:id="anchoreUpdate" layoutX="161.0" layoutY="48.0" prefHeight="158.0" prefWidth="378.0" visible="false">
+         <children>
+            <Label layoutX="56.0" layoutY="9.0" prefHeight="17.0" prefWidth="60.0" text="Role">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="brtn_fin" layoutX="143.0" layoutY="71.0" mnemonicParsing="false"  prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: #63e6be;" text="Edit">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="comboR" editable="true" layoutX="54.0" layoutY="37.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </children>
+    
+</AnchorPane>

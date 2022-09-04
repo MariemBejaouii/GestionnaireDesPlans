@@ -1,0 +1,1 @@
+{"idUser":26,"password":"2041716bfcd14481f863f6bb2eb8ba06","role":"user","adressse":"nabeul","cin":"87654321","telephone":"50417896","nom":"mouhamed","prenom":"bejaoui","email":"mouhamed.bejaoui@yahoo.fr"}

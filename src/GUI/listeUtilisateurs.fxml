@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ListeUtilisateursController">
+       <children>
+      <TableView fx:id="TableUtilisateurs" layoutX="137.0" layoutY="168.0" onMouseClicked="#onTableItemSelect" prefHeight="443.0" prefWidth="900.0">
+        <columns>
+          <TableColumn id="colNumeroPlan" fx:id="nomCol" prefWidth="162.0" text="Nom" />
+          <TableColumn id="colDate" fx:id="prenomCol" prefWidth="138.0" text="Prénom" />
+            <TableColumn id="colPDF" fx:id="adresseCol" prefWidth="184.0" text="Adresse" />
+            <TableColumn id="colCodeArticle" fx:id="emailCol" prefWidth="132.0" text="Email" />
+            <TableColumn id="colBt" fx:id="passwordCol" prefWidth="115.0" text="Mot de passe" />
+            <TableColumn id="colAtelier" fx:id="roleCol" prefWidth="136.0" text="Role" />
+            <TableColumn id="colAtelier" fx:id="cinCol" prefWidth="136.0" text="Cin" />
+            <TableColumn id="colAtelier" fx:id="telephoneCol" prefWidth="217.0" text="Téléphone" />
+        </columns>
+      </TableView>
+      <AnchorPane fx:id="anchoreUpdate" layoutX="185.0" layoutY="114.0" prefHeight="108.0" prefWidth="260.0" visible="false">
+         <children>
+            <TextField fx:id="txtRole" layoutX="25.0" layoutY="33.0" prefHeight="30.0" prefWidth="210.0" />
+            <Label layoutX="28.0" layoutY="9.0" prefHeight="17.0" prefWidth="60.0" text="Role">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="brtn_fin" layoutX="169.0" layoutY="71.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: #facd68;" text="Edit">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="82.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="anchorpane" layoutX="33.0" layoutY="664.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="188.0" prefWidth="1000.0" style="-fx-background-color: #F5F5DC">
+         <children>
+            <TextField fx:id="txtNom" layoutX="112.0" layoutY="14.0" prefHeight="39.0" prefWidth="230.0" promptText="Nom">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCin" layoutX="480.0" layoutY="75.0" prefHeight="39.0" prefWidth="210.0" promptText="Cin">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtAdresse" layoutX="616.0" layoutY="14.0" prefHeight="39.0" prefWidth="210.0" promptText="Adresse" />
+            <Button fx:id="btnAjouter" layoutX="112.0" layoutY="141.0" mnemonicParsing="false" onAction="#AjouterUtilisateur" prefHeight="34.0" prefWidth="155.0" style="-fx-background-color: #facd68; -fx-background-radius: 0 0 0 0;" text="Ajouter utilisateur">
+               <effect>
+                  <DropShadow color="#b2aaaa" />
+               </effect>
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnModifier" layoutX="373.0" layoutY="143.0" mnemonicParsing="false" onAction="#ModifierUtilisateur" prefHeight="31.0" prefWidth="173.0" style="-fx-background-color: #facd68; -fx-background-radius: 0 0 0 0;" text="Modifier utilisateur">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="btnSupprimer" layoutX="653.0" layoutY="143.0" mnemonicParsing="false" onAction="#SupprimerUtilisateur" prefHeight="31.0" prefWidth="173.0" style="-fx-background-color: #facd68; -fx-background-radius: 0 0 0 0;" text="Supprimer utilisateur">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <TextField fx:id="txtPrenom" layoutX="363.0" layoutY="14.0" prefHeight="39.0" prefWidth="230.0" promptText="Prénom">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEmail" layoutX="850.0" layoutY="14.0" prefHeight="39.0" prefWidth="210.0" promptText="Email">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtTelephone" layoutX="757.0" layoutY="74.0" prefHeight="39.0" prefWidth="218.0" promptText="Téléphone">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" layoutX="158.0" layoutY="71.0" prefHeight="39.0" prefWidth="230.0" promptText="Mot de passe " />
+         </children>
+         <padding>
+            <Insets left="20.0" top="20.0" />
+         </padding>
+      </AnchorPane>
+
+   </children>
+    
+</AnchorPane>
