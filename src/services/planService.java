@@ -18,7 +18,7 @@ public class planService {
     Connection cnx;
     notification nf = new notification();
     //  private EntityManager emf;
-
+//////////////////::testttt
     public planService() {
         cnx = MyConnexion.getInstance().getCnx();
     }
